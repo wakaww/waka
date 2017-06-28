@@ -1,0 +1,207 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: #373737;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  border-radius: 0.2em;
+  margin-bottom: 0.75em;
+  box-shadow: none;
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  padding: 0.25em 0.5em;
+}
+
+button {
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+  color: #14CC8E;
+  border: 1px solid #14CC8E;
+  padding: 0.25em 1em;
+  border-radius: 5em;
+  transition: background 200ms ease-in-out;
+}
+
+button:hover {
+  color: #fff;
+  background: #14CC8E;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+.frame {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  padding: 5rem 0;
+  display: flex;
+}
+
+.header__logo {
+  display: flex;
+  flex: 4;
+  font-size: 130%;
+  color: #14CC8E;
+  line-height: 1em;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.header__nav {
+  display: flex;
+  flex: 8;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+}
+
+.nav__item {
+  padding-left: 2em;
+}
+
+.nav__item__link {
+  color: #777;
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+}
+
+.nav__item__link:hover {
+  color: #14CC8E;
+}
+
+.nav__item__link.nav__item__link--donate {
+  color: #14CC8E;
+  border: 1px solid #14CC8E;
+  padding: 0.5em 1em;
+  border-radius: 5em;
+  transition: color 0ms;
+  transition: background 200ms ease-in-out;
+}
+
+.nav__item__link.nav__item__link--donate:hover {
+  color: #fff;
+  background: #14CC8E;
+}
+
+.mission__hero {
+  font-size: 350%;
+  line-height: 1.45;
+}
+
+.mission__hero__accent {
+  color: #14CC8E;
+}
+
+.mission__verse {
+  color: #999;
+  margin-top: 0.75em;
+  max-width: 70%;
+  line-height: 1.7;
+  font-size: 110%;
+  margin-left: 0;
+}
+
+.mission__verse__quote {
+  font-style: italic;
+}
+
+.mission__verse__attribution {
+  text-transform: uppercase;
+  font-size: 80%;
+}
+
+.hero-image {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.section {
+  margin-bottom: 7rem;
+}
+
+.about {
+  display: flex;
+}
+
+.content-block {
+  display: flex;
+}
+
+.content-block__header {
+  flex: 2;
+  font-size: 200%;
+  margin-right: calc(1/12 * 100%);
+}
+
+.content-block__content {
+  flex: 9;
+  font-size: 120%;
+  line-height: 1.7;
+}
+
+.content-block__content__contact-title {
+  margin-bottom: 0.5em;
+}
+
+.vision {
+  margin-top: 3rem;
+  font-size: 160%;
+  line-height: 1.5;
+}
+
+.vision small {
+  color: #14CC8E;
+  font-size: 60%;
+  text-transform: uppercase;
+}
+
+.animated {
+  animation-duration: 700ms;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 50%, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+  animation-timing-function: ease-in-out;
+}
