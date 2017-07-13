@@ -53,3 +53,7 @@ a {
 a:hover {
   color: #07A670; /* #14CC8E darkened 10%, saturated 10% */
 }
+
+::selection {
+  background: #B4F8E1;
+}
